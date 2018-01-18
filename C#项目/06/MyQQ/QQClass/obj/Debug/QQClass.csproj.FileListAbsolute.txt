@@ -1,0 +1,5 @@
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\QQClass\bin\Debug\QQClass.dll
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\QQClass\bin\Debug\QQClass.pdb
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\QQClass\obj\Debug\ResolveAssemblyReference.cache
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\QQClass\obj\Debug\QQClass.dll
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\QQClass\obj\Debug\QQClass.pdb

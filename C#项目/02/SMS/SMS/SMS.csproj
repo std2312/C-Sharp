@@ -1,0 +1,322 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0FB6001-0644-41DA-982D-102F25C091A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMS</RootNamespace>
+    <AssemblyName>SMS</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\ConnClass.cs" />
+    <Compile Include="BaseClass\GSM.cs" />
+    <Compile Include="frmAddDy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddDy.Designer.cs">
+      <DependentUpon>frmAddDy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePwd.Designer.cs">
+      <DependentUpon>frmChangePwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCydy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCydy.Designer.cs">
+      <DependentUpon>frmCydy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDy.Designer.cs">
+      <DependentUpon>frmDy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDyChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDyChange.Designer.cs">
+      <DependentUpon>frmDyChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLock.Designer.cs">
+      <DependentUpon>frmLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResvice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResvice.Designer.cs">
+      <DependentUpon>frmResvice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSendSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSendSMS.Designer.cs">
+      <DependentUpon>frmSendSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSmsXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSmsXX.Designer.cs">
+      <DependentUpon>frmSmsXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTel.Designer.cs">
+      <DependentUpon>frmTel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTelNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTelNote.Designer.cs">
+      <DependentUpon>frmTelNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYfxx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYfxx.Designer.cs">
+      <DependentUpon>frmYfxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddDy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddDy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePwd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCydy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCydy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDy.resx">
+      <DependentUpon>frmDy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDyChange.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDyChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResvice.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmResvice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSendSMS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSendSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSmsXX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSmsXX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTelNote.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTelNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYfxx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmYfxx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\bg.jpg" />
+    <Content Include="DataBase\db_SMS.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\an_1.gif" />
+    <Content Include="Image\an_2.gif" />
+    <Content Include="Image\b1.gif" />
+    <Content Include="Image\b2.gif" />
+    <Content Include="Image\bg_1.gif" />
+    <Content Include="Image\bg_2.gif" />
+    <Content Include="Image\j_1.gif" />
+    <Content Include="Image\login.jpg" />
+    <Content Include="Image\login_1.gif" />
+    <Content Include="Image\login_2.gif" />
+    <None Include="Resources\login.jpg" />
+    <None Include="Resources\new_nav_r1_c1.gif" />
+    <None Include="Resources\menu_top_r1_c2.gif" />
+    <None Include="Resources\sort_bg_02.gif" />
+    <None Include="Resources\search_bg.jpg" />
+    <None Include="Resources\mb_08.gif" />
+    <None Include="Resources\plyer_r5_c2.jpg" />
+    <None Include="Resources\vod_mf_r21_c7.jpg" />
+    <None Include="Resources\bg10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

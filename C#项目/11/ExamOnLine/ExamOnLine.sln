@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ExamOnLine", "..\ExamOnLine", "{52BB8625-0A8B-4521-95B1-1FD2F89A8938}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/ExamOnLine"
+		Debug.AspNetCompiler.PhysicalPath = "..\ExamOnLine\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ExamOnLine\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ExamOnLine"
+		Release.AspNetCompiler.PhysicalPath = "..\ExamOnLine\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ExamOnLine\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1033"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52BB8625-0A8B-4521-95B1-1FD2F89A8938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52BB8625-0A8B-4521-95B1-1FD2F89A8938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

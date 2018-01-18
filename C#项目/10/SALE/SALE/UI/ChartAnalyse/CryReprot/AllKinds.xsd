@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AllKinds" targetNamespace="http://tempuri.org/AllKinds.xsd" xmlns:mstns="http://tempuri.org/AllKinds.xsd" xmlns="http://tempuri.org/AllKinds.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AllKinds" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="AllKinds" msprop:Generator_DataSetName="AllKinds" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AllKinds" msprop:Generator_UserTableName="AllKinds" msprop:Generator_RowDeletedName="AllKindsRowDeleted" msprop:Generator_RowChangedName="AllKindsRowChanged" msprop:Generator_RowClassName="AllKindsRow" msprop:Generator_RowChangingName="AllKindsRowChanging" msprop:Generator_RowEvArgName="AllKindsRowChangeEvent" msprop:Generator_RowEvHandlerName="AllKindsRowChangeEventHandler" msprop:Generator_TableClassName="AllKindsDataTable" msprop:Generator_TableVarName="tableAllKinds" msprop:Generator_RowDeletingName="AllKindsRowDeleting" msprop:Generator_TablePropName="_AllKinds">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GoodsTypeCode" msprop:Generator_UserColumnName="GoodsTypeCode" msprop:Generator_ColumnVarNameInTable="columnGoodsTypeCode" msprop:Generator_ColumnPropNameInRow="GoodsTypeCode" msprop:Generator_ColumnPropNameInTable="GoodsTypeCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GoodsTypeName" msprop:Generator_UserColumnName="GoodsTypeName" msprop:Generator_ColumnVarNameInTable="columnGoodsTypeName" msprop:Generator_ColumnPropNameInRow="GoodsTypeName" msprop:Generator_ColumnPropNameInTable="GoodsTypeNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NumericalValue" msprop:Generator_UserColumnName="NumericalValue" msprop:Generator_ColumnVarNameInTable="columnNumericalValue" msprop:Generator_ColumnPropNameInRow="NumericalValue" msprop:Generator_ColumnPropNameInTable="NumericalValueColumn" type="xs:decimal" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

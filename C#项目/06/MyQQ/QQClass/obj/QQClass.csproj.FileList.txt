@@ -1,0 +1,5 @@
+bin\Debug\QQClass.dll
+bin\Debug\QQClass.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\QQClass.dll
+obj\Debug\QQClass.pdb

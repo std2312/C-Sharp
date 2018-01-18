@@ -1,0 +1,13 @@
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQClient\MyQQClient\bin\Debug\MyQQClient.exe
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQClient\MyQQClient\bin\Debug\MyQQClient.pdb
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQClient\MyQQClient\bin\Debug\QQClass.dll
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQClient\MyQQClient\bin\Debug\QQClass.pdb
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQClient\MyQQClient\obj\Debug\ResolveAssemblyReference.cache
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQClient\MyQQClient\obj\Debug\MyQQClient.F_Chat.resources
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQClient\MyQQClient\obj\Debug\MyQQClient.F_Client.resources
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQClient\MyQQClient\obj\Debug\MyQQClient.F_Logon.resources
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQClient\MyQQClient\obj\Debug\MyQQClient.F_SerSetup.resources
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQClient\MyQQClient\obj\Debug\MyQQClient.Properties.Resources.resources
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQClient\MyQQClient\obj\Debug\MyQQClient.csproj.GenerateResource.Cache
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQClient\MyQQClient\obj\Debug\MyQQClient.exe
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQClient\MyQQClient\obj\Debug\MyQQClient.pdb
