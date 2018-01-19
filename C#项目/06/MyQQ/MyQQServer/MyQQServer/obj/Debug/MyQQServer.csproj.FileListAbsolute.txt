@@ -1,0 +1,10 @@
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQServer\MyQQServer\obj\Debug\MyQQServer.exe
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQServer\MyQQServer\obj\Debug\MyQQServer.pdb
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQServer\MyQQServer\bin\Debug\MyQQServer.exe
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQServer\MyQQServer\bin\Debug\MyQQServer.pdb
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQServer\MyQQServer\bin\Debug\QQClass.dll
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQServer\MyQQServer\bin\Debug\QQClass.pdb
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQServer\MyQQServer\obj\Debug\ResolveAssemblyReference.cache
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQServer\MyQQServer\obj\Debug\MyQQServer.F_Server.resources
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQServer\MyQQServer\obj\Debug\MyQQServer.Properties.Resources.resources
+E:\源码\C#项目开发全程实录（第二版）\TM\06\MyQQ\MyQQServer\MyQQServer\obj\Debug\MyQQServer.csproj.GenerateResource.Cache

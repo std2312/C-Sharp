@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DifferentMonth" targetNamespace="http://tempuri.org/DifferentMonth.xsd" xmlns:mstns="http://tempuri.org/DifferentMonth.xsd" xmlns="http://tempuri.org/DifferentMonth.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DifferentMonth" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DifferentMonth" msprop:Generator_UserDSName="DifferentMonth" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DifferentMonth" msprop:Generator_UserTableName="DifferentMonth" msprop:Generator_RowDeletedName="DifferentMonthRowDeleted" msprop:Generator_TableClassName="DifferentMonthDataTable" msprop:Generator_RowChangedName="DifferentMonthRowChanged" msprop:Generator_RowClassName="DifferentMonthRow" msprop:Generator_RowChangingName="DifferentMonthRowChanging" msprop:Generator_RowEvArgName="DifferentMonthRowChangeEvent" msprop:Generator_RowEvHandlerName="DifferentMonthRowChangeEventHandler" msprop:Generator_TablePropName="_DifferentMonth" msprop:Generator_TableVarName="tableDifferentMonth" msprop:Generator_RowDeletingName="DifferentMonthRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Month" msprop:Generator_UserColumnName="Month" msprop:Generator_ColumnPropNameInRow="Month" msprop:Generator_ColumnVarNameInTable="columnMonth" msprop:Generator_ColumnPropNameInTable="MonthColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NumericalValue" msprop:Generator_UserColumnName="NumericalValue" msprop:Generator_ColumnPropNameInRow="NumericalValue" msprop:Generator_ColumnVarNameInTable="columnNumericalValue" msprop:Generator_ColumnPropNameInTable="NumericalValueColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

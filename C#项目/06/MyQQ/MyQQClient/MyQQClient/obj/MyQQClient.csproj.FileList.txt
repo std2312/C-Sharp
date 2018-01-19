@@ -1,0 +1,13 @@
+bin\Debug\MyQQClient.exe
+bin\Debug\MyQQClient.pdb
+bin\Debug\QQClass.dll
+bin\Debug\QQClass.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\MyQQClient.F_Chat.resources
+obj\Debug\MyQQClient.F_Client.resources
+obj\Debug\MyQQClient.F_Logon.resources
+obj\Debug\MyQQClient.F_SerSetup.resources
+obj\Debug\MyQQClient.Properties.Resources.resources
+obj\Debug\MyQQClient.csproj.GenerateResource.Cache
+obj\Debug\MyQQClient.exe
+obj\Debug\MyQQClient.pdb

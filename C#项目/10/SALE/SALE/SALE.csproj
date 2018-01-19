@@ -1,0 +1,958 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F470397-CF8B-430F-A5F4-5C03FF2A88CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SALE</RootNamespace>
+    <AssemblyName>SALE</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\AgentManage\AgentRecord.cs" />
+    <Compile Include="BLL\AgentManage\DepRegister.cs" />
+    <Compile Include="BLL\Other\AppMain.cs" />
+    <Compile Include="BLL\SaleManage\BarterBaseCDRecord.cs" />
+    <Compile Include="BLL\SaleManage\BarterConsignCDRecord.cs" />
+    <Compile Include="BLL\SaleManage\RetailBarterBaseBill.cs" />
+    <Compile Include="BLL\SaleManage\RetailBarterConsignBill.cs" />
+    <Compile Include="BLL\SaleManage\RetailBarterExchangeBill.cs" />
+    <Compile Include="BLL\SaleManage\RetailCustomer.cs" />
+    <Compile Include="BLL\SaleManage\RetailSaleConsignBill.cs" />
+    <Compile Include="BLL\SaleManage\RetailSaleOrderBill.cs" />
+    <Compile Include="BLL\SaleManage\RetailSaleTradeBill.cs" />
+    <Compile Include="BLL\SaleManage\RetailUntreadGatherBill.cs" />
+    <Compile Include="BLL\SaleManage\RetailUntreadRefundBill.cs" />
+    <Compile Include="BLL\SaleManage\RetailUntreadBaseBill.cs" />
+    <Compile Include="BLL\SaleManage\SaleCDRecord.cs" />
+    <Compile Include="BLL\SaleManage\UntreadCDRecord.cs" />
+    <Compile Include="BLL\SystemSetting\AgentLevel.cs" />
+    <Compile Include="BLL\SystemSetting\Bank.cs" />
+    <Compile Include="BLL\SystemSetting\ConsignCorp.cs" />
+    <Compile Include="BLL\SystemSetting\Employee.cs" />
+    <Compile Include="BLL\SystemSetting\GoodsSeries.cs" />
+    <Compile Include="BLL\SystemSetting\Operator.cs" />
+    <Compile Include="BLL\SystemSetting\PayType.cs" />
+    <Compile Include="BLL\SystemSetting\Province.cs" />
+    <Compile Include="BLL\SystemSetting\GoodsType.cs" />
+    <Compile Include="BLL\SystemSetting\SysModule.cs" />
+    <Compile Include="Common\ControlBindDataSource.cs" />
+    <Compile Include="Common\GlobalProperty.cs" />
+    <Compile Include="Common\OperFile.cs" />
+    <Compile Include="Common\Useful.cs" />
+    <Compile Include="DAL\DataLogic.cs" />
+    <Compile Include="UI\AgentManage\FormAgentRecord .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AgentManage\FormAgentRecord .Designer.cs">
+      <DependentUpon>FormAgentRecord .cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AgentManage\FormAgentRecordInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AgentManage\FormAgentRecordInput.Designer.cs">
+      <DependentUpon>FormAgentRecordInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AgentManage\FormDepRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AgentManage\FormDepRegister.Designer.cs">
+      <DependentUpon>FormDepRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AgentManage\FormDepRegisterInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AgentManage\FormDepRegisterInput.Designer.cs">
+      <DependentUpon>FormDepRegisterInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ChartAnalyse\CryReprot\AllKinds.cs">
+      <DependentUpon>AllKinds.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ChartAnalyse\CryReprot\AllKinds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllKinds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ChartAnalyse\CryReprot\CryAllkindsSometimeSaleAnalyse.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryAllkindsSometimeSaleAnalyse.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ChartAnalyse\CryReprot\CryDifferentMonthSaleAnalyse.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryDifferentMonthSaleAnalyse.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ChartAnalyse\CryReprot\DifferentMonth.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DifferentMonth.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ChartAnalyse\WinForm\FormDifferentMonthSaleAnalyse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ChartAnalyse\WinForm\FormDifferentMonthSaleAnalyse.Designer.cs">
+      <DependentUpon>FormDifferentMonthSaleAnalyse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ChartAnalyse\WinForm\FormAllkindsSometimeSaleAnalyse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ChartAnalyse\WinForm\FormAllkindsSometimeSaleAnalyse.Designer.cs">
+      <DependentUpon>FormAllkindsSometimeSaleAnalyse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataReport\CryReprot\CryBarterList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryBarterList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\DataReport\CryReprot\CryOperationCollect.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryOperationCollect.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\DataReport\CryReprot\CrySaleList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrySaleList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\DataReport\CryReprot\CryUntreadList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryUntreadList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\DataReport\CryReprot\OperationCollect.cs">
+      <DependentUpon>OperationCollect.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\DataReport\CryReprot\OperationCollect.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OperationCollect.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataReport\WinForm\FormOperationList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataReport\WinForm\FormOperationList.Designer.cs">
+      <DependentUpon>FormOperationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataReport\WinForm\FormOperationCollect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataReport\WinForm\FormOperationCollect.Designer.cs">
+      <DependentUpon>FormOperationCollect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormAppMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormAppMain.Designer.cs">
+      <DependentUpon>FormAppMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UI\AgentManage\FormAgentRecord .resx">
+      <DependentUpon>FormAgentRecord .cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AgentManage\FormAgentRecordInput.resx">
+      <DependentUpon>FormAgentRecordInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AgentManage\FormDepRegister.resx">
+      <DependentUpon>FormDepRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AgentManage\FormDepRegisterInput.resx">
+      <DependentUpon>FormDepRegisterInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ChartAnalyse\CryReprot\CryAllkindsSometimeSaleAnalyse.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryAllkindsSometimeSaleAnalyse.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ChartAnalyse\CryReprot\CryDifferentMonthSaleAnalyse.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryDifferentMonthSaleAnalyse.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ChartAnalyse\WinForm\FormAllkindsSometimeSaleAnalyse.resx">
+      <DependentUpon>FormAllkindsSometimeSaleAnalyse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ChartAnalyse\WinForm\FormDifferentMonthSaleAnalyse.resx">
+      <DependentUpon>FormDifferentMonthSaleAnalyse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataReport\CryReprot\CryBarterList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryBarterList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataReport\CryReprot\CryOperationCollect.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryOperationCollect.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataReport\CryReprot\CrySaleList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrySaleList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataReport\CryReprot\CryUntreadList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryUntreadList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataReport\WinForm\FormOperationCollect.resx">
+      <DependentUpon>FormOperationCollect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataReport\WinForm\FormOperationList.resx">
+      <DependentUpon>FormOperationList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormAppMain.resx">
+      <DependentUpon>FormAppMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormBarterBaseCDRecord.resx">
+      <DependentUpon>FormBarterBaseCDRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormBarterConsignCDRecord.resx">
+      <DependentUpon>FormBarterConsignCDRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormBrowseRetailBarterBaseBill.resx">
+      <DependentUpon>FormBrowseRetailBarterBaseBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormBrowseRetailBarterBaseBillOther.resx">
+      <DependentUpon>FormBrowseRetailBarterBaseBillOther.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormBrowseRetailBarterConsignBill.resx">
+      <DependentUpon>FormBrowseRetailBarterConsignBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormBrowseRetailBarterExchangeBill.resx">
+      <DependentUpon>FormBrowseRetailBarterExchangeBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormBrowseRetailCustomer.resx">
+      <DependentUpon>FormBrowseRetailCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormBrowseRetailSaleConsignBill.resx">
+      <DependentUpon>FormBrowseRetailSaleConsignBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormBrowseRetailSaleOrderBill.resx">
+      <DependentUpon>FormBrowseRetailSaleOrderBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormBrowseRetailSaleTradeBill.resx">
+      <DependentUpon>FormBrowseRetailSaleTradeBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormBrowseRetailUntreadBaseBill.resx">
+      <DependentUpon>FormBrowseRetailUntreadBaseBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormBrowseRetailUntreadBaseBillOther.resx">
+      <DependentUpon>FormBrowseRetailUntreadBaseBillOther.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormBrowseRetailUntreadGatherBill.resx">
+      <DependentUpon>FormBrowseRetailUntreadGatherBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormBrowseRetailUntreadRefundBill.resx">
+      <DependentUpon>FormBrowseRetailUntreadRefundBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailBarterBaseBill.resx">
+      <DependentUpon>FormRetailBarterBaseBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailBarterBaseBillInput.resx">
+      <DependentUpon>FormRetailBarterBaseBillInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailBarterConsignBillInput.resx">
+      <DependentUpon>FormRetailBarterConsignBillInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailBarterConsignBill.resx">
+      <DependentUpon>FormRetailBarterConsignBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailBarterExchangeBill.resx">
+      <DependentUpon>FormRetailBarterExchangeBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailBarterExchangeBillInput.resx">
+      <DependentUpon>FormRetailBarterExchangeBillInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailSaleConsignBill.resx">
+      <DependentUpon>FormRetailSaleConsignBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailSaleConsignBillInput.resx">
+      <DependentUpon>FormRetailSaleConsignBillInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailSaleOrderBill.resx">
+      <DependentUpon>FormRetailSaleOrderBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailSaleBill.resx">
+      <DependentUpon>FormRetailSaleBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailSaleOrderBillInput.resx">
+      <DependentUpon>FormRetailSaleOrderBillInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailSaleTradeBill.resx">
+      <DependentUpon>FormRetailSaleTradeBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailSaleTradeBillInput.resx">
+      <DependentUpon>FormRetailSaleTradeBillInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailUntreadBaseBill.resx">
+      <DependentUpon>FormRetailUntreadBaseBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailUntreadBaseBillInput.resx">
+      <DependentUpon>FormRetailUntreadBaseBillInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailUntreadGatherBill.resx">
+      <DependentUpon>FormRetailUntreadGatherBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailUntreadGatherBillInput.resx">
+      <DependentUpon>FormRetailUntreadGatherBillInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailUntreadRefundBill.resx">
+      <DependentUpon>FormRetailUntreadRefundBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormRetailUntreadRefundBillInput.resx">
+      <DependentUpon>FormRetailUntreadRefundBillInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormSaleCDRecord.resx">
+      <DependentUpon>FormSaleCDRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaleManage\FormUntreadCDRecord.resx">
+      <DependentUpon>FormUntreadCDRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormAgentLevel.resx">
+      <DependentUpon>FormAgentLevel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormAgentLevelInput.resx">
+      <DependentUpon>FormAgentLevelInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormAmendPassword.resx">
+      <DependentUpon>FormAmendPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormBank.resx">
+      <DependentUpon>FormBank.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormBankInput.resx">
+      <DependentUpon>FormBankInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormConsignCorp.resx">
+      <DependentUpon>FormConsignCorp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormConsignCorpInput.resx">
+      <DependentUpon>FormConsignCorpInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormEmployee.resx">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormEmployeeInput.resx">
+      <DependentUpon>FormEmployeeInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormGoodsSeries.resx">
+      <DependentUpon>FormGoodsSeries.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormGoodsSeriesInput.resx">
+      <DependentUpon>FormGoodsSeriesInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormGoodsType.resx">
+      <DependentUpon>FormGoodsType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormGoodsTypeInput.resx">
+      <DependentUpon>FormGoodsTypeInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormOperator.resx">
+      <DependentUpon>FormOperator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormOperatorInput.resx">
+      <DependentUpon>FormOperatorInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormPayType.resx">
+      <DependentUpon>FormPayType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormPayTypeInput.resx">
+      <DependentUpon>FormPayTypeInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormProvince.resx">
+      <DependentUpon>FormProvince.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormProvinceInput.resx">
+      <DependentUpon>FormProvinceInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemSetting\FormPurviewAssign.resx">
+      <DependentUpon>FormPurviewAssign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\ChartAnalyse\CryReprot\AllKinds.xsc">
+      <DependentUpon>AllKinds.xsd</DependentUpon>
+    </None>
+    <None Include="UI\ChartAnalyse\CryReprot\AllKinds.xsd">
+      <SubType>
+      </SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllKinds.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\ChartAnalyse\CryReprot\AllKinds.xss">
+      <DependentUpon>AllKinds.xsd</DependentUpon>
+    </None>
+    <None Include="UI\ChartAnalyse\CryReprot\DifferentMonth.xsc">
+      <DependentUpon>DifferentMonth.xsd</DependentUpon>
+    </None>
+    <None Include="UI\ChartAnalyse\CryReprot\DifferentMonth.xsd">
+      <SubType>
+      </SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DifferentMonth.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\ChartAnalyse\CryReprot\DifferentMonth.xss">
+      <DependentUpon>DifferentMonth.xsd</DependentUpon>
+    </None>
+    <None Include="UI\DataReport\CryReprot\OperationCollect.xsc">
+      <DependentUpon>OperationCollect.xsd</DependentUpon>
+    </None>
+    <None Include="UI\DataReport\CryReprot\OperationCollect.xsd">
+      <SubType>
+      </SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OperationCollect.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\DataReport\CryReprot\OperationCollect.xss">
+      <DependentUpon>OperationCollect.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UI\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBarterBaseCDRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBarterBaseCDRecord.Designer.cs">
+      <DependentUpon>FormBarterBaseCDRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBarterConsignCDRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBarterConsignCDRecord.Designer.cs">
+      <DependentUpon>FormBarterConsignCDRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailBarterBaseBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailBarterBaseBill.Designer.cs">
+      <DependentUpon>FormBrowseRetailBarterBaseBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailBarterBaseBillOther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailBarterBaseBillOther.Designer.cs">
+      <DependentUpon>FormBrowseRetailBarterBaseBillOther.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailBarterConsignBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailBarterConsignBill.Designer.cs">
+      <DependentUpon>FormBrowseRetailBarterConsignBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailBarterExchangeBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailBarterExchangeBill.Designer.cs">
+      <DependentUpon>FormBrowseRetailBarterExchangeBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailCustomer.Designer.cs">
+      <DependentUpon>FormBrowseRetailCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailSaleConsignBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailSaleConsignBill.Designer.cs">
+      <DependentUpon>FormBrowseRetailSaleConsignBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailSaleOrderBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailSaleOrderBill.Designer.cs">
+      <DependentUpon>FormBrowseRetailSaleOrderBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailSaleTradeBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailSaleTradeBill.Designer.cs">
+      <DependentUpon>FormBrowseRetailSaleTradeBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailUntreadBaseBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailUntreadBaseBill.Designer.cs">
+      <DependentUpon>FormBrowseRetailUntreadBaseBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailUntreadBaseBillOther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailUntreadBaseBillOther.Designer.cs">
+      <DependentUpon>FormBrowseRetailUntreadBaseBillOther.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailUntreadGatherBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailUntreadGatherBill.Designer.cs">
+      <DependentUpon>FormBrowseRetailUntreadGatherBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailUntreadRefundBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormBrowseRetailUntreadRefundBill.Designer.cs">
+      <DependentUpon>FormBrowseRetailUntreadRefundBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailBarterBaseBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailBarterBaseBill.Designer.cs">
+      <DependentUpon>FormRetailBarterBaseBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailBarterBaseBillInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailBarterBaseBillInput.Designer.cs">
+      <DependentUpon>FormRetailBarterBaseBillInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailBarterConsignBillInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailBarterConsignBillInput.Designer.cs">
+      <DependentUpon>FormRetailBarterConsignBillInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailBarterConsignBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailBarterConsignBill.Designer.cs">
+      <DependentUpon>FormRetailBarterConsignBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailBarterExchangeBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailBarterExchangeBill.Designer.cs">
+      <DependentUpon>FormRetailBarterExchangeBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailBarterExchangeBillInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailBarterExchangeBillInput.Designer.cs">
+      <DependentUpon>FormRetailBarterExchangeBillInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailSaleConsignBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailSaleConsignBill.Designer.cs">
+      <DependentUpon>FormRetailSaleConsignBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailSaleOrderBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailSaleOrderBill.Designer.cs">
+      <DependentUpon>FormRetailSaleOrderBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailSaleBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailSaleBill.Designer.cs">
+      <DependentUpon>FormRetailSaleBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailSaleOrderBillInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailSaleOrderBillInput.Designer.cs">
+      <DependentUpon>FormRetailSaleOrderBillInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailSaleTradeBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailSaleTradeBill.Designer.cs">
+      <DependentUpon>FormRetailSaleTradeBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailSaleTradeBillInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailSaleTradeBillInput.Designer.cs">
+      <DependentUpon>FormRetailSaleTradeBillInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailSaleConsignBillInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailSaleConsignBillInput.Designer.cs">
+      <DependentUpon>FormRetailSaleConsignBillInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailUntreadBaseBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailUntreadBaseBill.Designer.cs">
+      <DependentUpon>FormRetailUntreadBaseBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailUntreadBaseBillInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailUntreadBaseBillInput.Designer.cs">
+      <DependentUpon>FormRetailUntreadBaseBillInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailUntreadGatherBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailUntreadGatherBill.Designer.cs">
+      <DependentUpon>FormRetailUntreadGatherBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailUntreadGatherBillInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailUntreadGatherBillInput.Designer.cs">
+      <DependentUpon>FormRetailUntreadGatherBillInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailUntreadRefundBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailUntreadRefundBill.Designer.cs">
+      <DependentUpon>FormRetailUntreadRefundBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailUntreadRefundBillInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormRetailUntreadRefundBillInput.Designer.cs">
+      <DependentUpon>FormRetailUntreadRefundBillInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormSaleCDRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormSaleCDRecord.Designer.cs">
+      <DependentUpon>FormSaleCDRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormUntreadCDRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaleManage\FormUntreadCDRecord.Designer.cs">
+      <DependentUpon>FormUntreadCDRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormAgentLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormAgentLevel.Designer.cs">
+      <DependentUpon>FormAgentLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormAgentLevelInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormAgentLevelInput.Designer.cs">
+      <DependentUpon>FormAgentLevelInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormAmendPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormAmendPassword.Designer.cs">
+      <DependentUpon>FormAmendPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormBank.Designer.cs">
+      <DependentUpon>FormBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormBankInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormBankInput.Designer.cs">
+      <DependentUpon>FormBankInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormConsignCorp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormConsignCorp.Designer.cs">
+      <DependentUpon>FormConsignCorp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormConsignCorpInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormConsignCorpInput.Designer.cs">
+      <DependentUpon>FormConsignCorpInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormEmployee.Designer.cs">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormEmployeeInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormEmployeeInput.Designer.cs">
+      <DependentUpon>FormEmployeeInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormGoodsSeries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormGoodsSeries.Designer.cs">
+      <DependentUpon>FormGoodsSeries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormGoodsSeriesInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormGoodsSeriesInput.Designer.cs">
+      <DependentUpon>FormGoodsSeriesInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormGoodsType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormGoodsType.Designer.cs">
+      <DependentUpon>FormGoodsType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormGoodsTypeInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormGoodsTypeInput.Designer.cs">
+      <DependentUpon>FormGoodsTypeInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormOperator.Designer.cs">
+      <DependentUpon>FormOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormOperatorInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormOperatorInput.Designer.cs">
+      <DependentUpon>FormOperatorInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormPayType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormPayType.Designer.cs">
+      <DependentUpon>FormPayType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormPayTypeInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormPayTypeInput.Designer.cs">
+      <DependentUpon>FormPayTypeInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormProvince.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormProvince.Designer.cs">
+      <DependentUpon>FormProvince.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormProvinceInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormProvinceInput.Designer.cs">
+      <DependentUpon>FormProvinceInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormPurviewAssign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemSetting\FormPurviewAssign.Designer.cs">
+      <DependentUpon>FormPurviewAssign.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AgentManage\16代理商档案.gif" />
+    <Content Include="Images\AgentManage\16代理登记.gif" />
+    <Content Include="Images\AgentManage\16代理管理.gif" />
+    <Content Include="Images\ChartAnalyse\16图表分析.gif" />
+    <Content Include="Images\ChartAnalyse\16月份间分析.gif" />
+    <Content Include="Images\ChartAnalyse\16某时段分析.gif" />
+    <Content Include="Images\DataReport\16数据报表.gif" />
+    <Content Include="Images\DataReport\16明细表.gif" />
+    <Content Include="Images\DataReport\16汇总表.gif" />
+    <Content Include="Images\other\16编程词典销售分析系统.gif" />
+    <Content Include="Images\other\16编程词典销售分析系统.ico" />
+    <Content Include="Images\other\16退出.gif" />
+    <Content Include="Images\other\an_03.gif" />
+    <Content Include="Images\other\an_05.gif" />
+    <Content Include="Images\other\an_07.gif" />
+    <Content Include="Images\other\关闭.gif" />
+    <Content Include="Images\other\关闭的文件夹副本.ico" />
+    <Content Include="Images\other\大图c#.bmp" />
+    <Content Include="Images\other\打开.gif" />
+    <Content Include="Images\other\打开的文件夹副本.ico" />
+    <Content Include="Images\other\登录.bmp" />
+    <Content Include="Images\other\登录小样C#.bmp" />
+    <Content Include="Images\other\登录背景C#.bmp" />
+    <Content Include="Images\other\退出.bmp" />
+    <Content Include="Images\other\重置.bmp" />
+    <Content Include="Images\SaleManage\16业务管理.gif" />
+    <Content Include="Images\SaleManage\16换货业务.gif" />
+    <Content Include="Images\SaleManage\16红点.gif" />
+    <Content Include="Images\SaleManage\16绿点.gif" />
+    <Content Include="Images\SaleManage\16蓝点.gif" />
+    <Content Include="Images\SaleManage\16退货业务.gif" />
+    <Content Include="Images\SaleManage\16销售业务.gif" />
+    <Content Include="Images\SystemSetting\16人员设置.gif" />
+    <Content Include="Images\SystemSetting\16代理级别.gif" />
+    <Content Include="Images\SystemSetting\16修改密码.gif" />
+    <Content Include="Images\SystemSetting\16商品大类.gif" />
+    <Content Include="Images\SystemSetting\16商品系列.gif" />
+    <Content Include="Images\SystemSetting\16基础设置.gif" />
+    <Content Include="Images\SystemSetting\16操作员维护.gif" />
+    <Content Include="Images\SystemSetting\16操作员设置.gif" />
+    <Content Include="Images\SystemSetting\16支付方式.gif" />
+    <Content Include="Images\SystemSetting\16权限设置.gif" />
+    <Content Include="Images\SystemSetting\16物流公司.gif" />
+    <Content Include="Images\SystemSetting\16省市设置.gif" />
+    <Content Include="Images\SystemSetting\16系统设置.gif" />
+    <Content Include="Images\SystemSetting\16银行设置.gif" />
+    <Content Include="Images\tool\add.ico" />
+    <Content Include="Images\tool\btnfind.ico" />
+    <Content Include="Images\tool\cancel.ico" />
+    <Content Include="Images\tool\change.ico" />
+    <Content Include="Images\tool\Close.ico" />
+    <Content Include="Images\tool\delete.ico" />
+    <Content Include="Images\tool\exit.ico" />
+    <Content Include="Images\tool\find.ico" />
+    <Content Include="Images\tool\Query.ico" />
+    <Content Include="Images\tool\save.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
