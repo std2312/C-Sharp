@@ -1,0 +1,6 @@
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\003-队列\bin\Debug\003-队列.exe.config
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\003-队列\bin\Debug\003-队列.exe
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\003-队列\bin\Debug\003-队列.pdb
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\003-队列\obj\Debug\003-队列.csprojResolveAssemblyReference.cache
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\003-队列\obj\Debug\003-队列.exe
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\003-队列\obj\Debug\003-队列.pdb

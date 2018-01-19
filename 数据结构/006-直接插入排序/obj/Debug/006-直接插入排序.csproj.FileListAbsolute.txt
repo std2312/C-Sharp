@@ -1,0 +1,6 @@
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\006-直接插入排序\bin\Debug\006-直接插入排序.exe.config
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\006-直接插入排序\bin\Debug\006-直接插入排序.exe
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\006-直接插入排序\bin\Debug\006-直接插入排序.pdb
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\006-直接插入排序\obj\Debug\006-直接插入排序.csprojResolveAssemblyReference.cache
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\006-直接插入排序\obj\Debug\006-直接插入排序.exe
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\006-直接插入排序\obj\Debug\006-直接插入排序.pdb

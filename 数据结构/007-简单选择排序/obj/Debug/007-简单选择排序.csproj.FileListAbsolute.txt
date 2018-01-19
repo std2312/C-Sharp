@@ -1,0 +1,6 @@
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\007-简单选择排序\bin\Debug\007-简单选择排序.exe.config
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\007-简单选择排序\bin\Debug\007-简单选择排序.exe
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\007-简单选择排序\bin\Debug\007-简单选择排序.pdb
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\007-简单选择排序\obj\Debug\007-简单选择排序.csprojResolveAssemblyReference.cache
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\007-简单选择排序\obj\Debug\007-简单选择排序.exe
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\007-简单选择排序\obj\Debug\007-简单选择排序.pdb

@@ -1,0 +1,6 @@
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\005-串\bin\Debug\005-串.exe.config
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\005-串\bin\Debug\005-串.exe
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\005-串\bin\Debug\005-串.pdb
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\005-串\obj\Debug\005-串.csprojResolveAssemblyReference.cache
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\005-串\obj\Debug\005-串.exe
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\005-串\obj\Debug\005-串.pdb

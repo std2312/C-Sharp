@@ -1,0 +1,6 @@
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\002-栈\bin\Debug\002-栈.exe.config
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\002-栈\bin\Debug\002-栈.exe
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\002-栈\bin\Debug\002-栈.pdb
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\002-栈\obj\Debug\002-栈.csprojResolveAssemblyReference.cache
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\002-栈\obj\Debug\002-栈.exe
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\002-栈\obj\Debug\002-栈.pdb

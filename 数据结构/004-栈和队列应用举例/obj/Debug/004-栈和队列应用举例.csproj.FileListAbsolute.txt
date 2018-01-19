@@ -1,0 +1,6 @@
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\004-栈和队列应用举例\bin\Debug\004-栈和队列应用举例.exe.config
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\004-栈和队列应用举例\bin\Debug\004-栈和队列应用举例.exe
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\004-栈和队列应用举例\bin\Debug\004-栈和队列应用举例.pdb
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\004-栈和队列应用举例\obj\Debug\004-栈和队列应用举例.csprojResolveAssemblyReference.cache
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\004-栈和队列应用举例\obj\Debug\004-栈和队列应用举例.exe
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\004-栈和队列应用举例\obj\Debug\004-栈和队列应用举例.pdb

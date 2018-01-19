@@ -1,0 +1,6 @@
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\001-线性表\bin\Debug\001-线性表.exe.config
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\001-线性表\bin\Debug\001-线性表.exe
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\001-线性表\bin\Debug\001-线性表.pdb
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\001-线性表\obj\Debug\001-线性表.csprojResolveAssemblyReference.cache
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\001-线性表\obj\Debug\001-线性表.exe
+c:\users\devsiki\Documents\Visual Studio 2012\Projects\数据结构\001-线性表\obj\Debug\001-线性表.pdb
